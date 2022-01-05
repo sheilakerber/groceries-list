@@ -13,6 +13,7 @@ const Content = () => {
       item.id === id ? { ...item, checked: !item.checked } : item
     );
     setItems(listItems);
+    localStorage.setItem("shoppinglist", JSON.stringify(listItems));
   };
 
   return (
