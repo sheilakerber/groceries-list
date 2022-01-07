@@ -1,4 +1,5 @@
 import Header from "./Components/Header";
+import { AddItem } from "./Components/AddItem";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import { useState } from "react";
@@ -27,6 +28,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <AddItem />
       <Content
         items={items}
         handleCheck={handleCheck}
